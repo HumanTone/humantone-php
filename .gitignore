@@ -1,0 +1,11 @@
+vendor/
+composer.lock
+.phpunit.result.cache
+.phpunit.cache/
+.php-cs-fixer.cache
+.idea/
+.DS_Store
+.env
+.env.local
+build/
+coverage/

@@ -1,0 +1,11 @@
+{
+  "error": {
+    "code": "insufficient_credits",
+    "message": "Not enough credits to humanize 1,200 words.",
+    "details": {
+      "required_credits": 12,
+      "available_credits": 4
+    }
+  },
+  "request_id": "550e8400-e29b-41d4-a716-446655440000"
+}

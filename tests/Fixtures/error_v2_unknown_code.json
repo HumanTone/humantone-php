@@ -1,0 +1,8 @@
+{
+  "error": {
+    "code": "spurious_unknown_code",
+    "message": "Some unknown error",
+    "details": {}
+  },
+  "request_id": "req-99"
+}

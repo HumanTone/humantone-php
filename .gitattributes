@@ -1,0 +1,15 @@
+# Normalize line endings for text files; keep LF in repo regardless of OS.
+* text=auto eol=lf
+
+# Anything past this line is excluded from `composer require` tarballs.
+# These files belong in the GitHub repo (CI, contributors, history) but
+# not in end-users' vendor/humantone/humantone-php directory.
+
+/.github               export-ignore
+/tests                 export-ignore
+
+/.gitattributes        export-ignore
+/.gitignore            export-ignore
+/.php-cs-fixer.dist.php export-ignore
+/phpstan.neon.dist     export-ignore
+/phpunit.xml.dist      export-ignore
