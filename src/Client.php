@@ -120,7 +120,7 @@ final class Client
 
         if ($candidate === null) {
             throw new InvalidRequestException(
-                message: 'Missing API key. Pass apiKey to HumanTone\Client or set HUMANTONE_API_KEY environment variable. Get a key at https://app.humantone.io/settings/api',
+                message: 'Missing API key. Pass apiKey to HumanTone\Client or set HUMANTONE_API_KEY environment variable. Get a key at https://humantone.io/dashboard/settings/api',
                 errorCode: 'missing_api_key',
             );
         }

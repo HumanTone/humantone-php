@@ -14,7 +14,7 @@ Requires PHP 8.2 or later.
 
 - PHP 8.2+
 - A paid HumanTone plan with API access. Free trial accounts cannot use the API.
-- An API key from [app.humantone.io/settings/api](https://app.humantone.io/settings/api).
+- An API key from [app.humantone.io/settings/api](https://humantone.io/dashboard/settings/api).
 
 ## Quickstart
 
@@ -133,7 +133,7 @@ $client = new Client();
 try {
     $result = $client->humanize(text: '...');
 } catch (InsufficientCreditsException) {
-    echo "Buy more credits at https://app.humantone.io/settings/credits\n";
+    echo "Buy more credits at https://humantone.io/dashboard/settings/credits\n";
 } catch (RateLimitException $e) {
     echo "Rate limited. Retry in {$e->getRetryAfterSeconds()}s.\n";
 } catch (InvalidRequestException $e) {
@@ -176,8 +176,8 @@ The SDK retries `account.get()` on network errors, 5xx, and 429 (up to 2 retries
 
 - API docs: https://humantone.io/docs/api/
 - MCP server: https://humantone.io/docs/mcp/
-- Get an API key: https://app.humantone.io/settings/api
-- Manage plan and credits: https://app.humantone.io/settings/plan, https://app.humantone.io/settings/credits
+- Get an API key: https://humantone.io/dashboard/settings/api
+- Manage plan and credits: https://humantone.io/dashboard/settings/plan, https://humantone.io/dashboard/settings/credits
 - Issues: https://github.com/humantone/humantone-php/issues
 - Author email: dev@humantone.io
 - Product support: help@humantone.io

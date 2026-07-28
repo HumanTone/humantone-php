@@ -54,7 +54,7 @@ final class ClientTest extends TestCase
         } catch (InvalidRequestException $e) {
             $this->assertSame('missing_api_key', $e->getErrorCode());
             $this->assertSame(
-                'Missing API key. Pass apiKey to HumanTone\Client or set HUMANTONE_API_KEY environment variable. Get a key at https://app.humantone.io/settings/api',
+                'Missing API key. Pass apiKey to HumanTone\Client or set HUMANTONE_API_KEY environment variable. Get a key at https://humantone.io/dashboard/settings/api',
                 $e->getMessage(),
             );
         }
